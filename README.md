@@ -1,1 +1,3 @@
 # ESP_IDF_userinput
+
+I've noticed a lot of redundant code and so much configuration details when configuring simple buttons and setting up ADC analog stuff in ESP-IDF so I created this library with the intent of simplifying configuraiton while still maintaining control over it. I've made this revolving around the ESP32 S3 but I'm sure it could be used with other Esspressif products, you just have to read through the datasheet provided by them like for example, the speed is set as low on the ADC driver since the ESP32 S3 only supports it at low. This can be useful in many projects because it tells the state of buttons, coordinates if youre dealing with matrices, and simple analog percentages.
