@@ -29,7 +29,7 @@ void app_main() {
   while(1) {
     MATRIX_UPDATE(&mymatrix);
     if(matrix_get_state(&mymatrix, 0, 0) == BUTTON_PRESSED) {
-      printf("Button at row 0, col 0 pressed \n"); //0 indexing, add 1 if you want 
+      printf("Button at row 0, col 0 pressed \n"); 
     }
     vTaskDelay(pdMS_TO_TICKS(100));
   }
