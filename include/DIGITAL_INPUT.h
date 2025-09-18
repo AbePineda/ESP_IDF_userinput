@@ -57,6 +57,7 @@ void pwm_set_duty(ledc_channel_t channel, uint32_t duty);
 
 void MATRIX_CONFIG(button_matrix_t* matrix, gpio_num_t* matrix_inputs, size_t col_count, gpio_num_t* matrix_outputs, size_t row_count);
 
+void MATRIX_UPDATE(button_matrix_t* matrix);
 
 
 
