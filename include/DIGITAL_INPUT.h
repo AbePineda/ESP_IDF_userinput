@@ -55,6 +55,9 @@ bool combo_flag(const size_t* internal_pins, const button_state* target_state, s
 void PWM_CONFIG(uint32_t freq, ledc_channel_t channel, gpio_num_t pin);
 void pwm_set_duty(ledc_channel_t channel, uint32_t duty);
 
+void MATRIX_CONFIG(button_matrix_t* matrix, gpio_num_t* matrix_inputs, size_t col_count, gpio_num_t* matrix_outputs, size_t row_count);
+
+
 
 
 #ifdef __cplusplus
