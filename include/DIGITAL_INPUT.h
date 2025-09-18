@@ -59,6 +59,8 @@ void MATRIX_CONFIG(button_matrix_t* matrix, gpio_num_t* matrix_inputs, size_t co
 
 void MATRIX_UPDATE(button_matrix_t* matrix);
 
+button_state matrix_get_state(button_matrix_t* matrix, size_t row, size_t col);
+
 
 
 #ifdef __cplusplus
